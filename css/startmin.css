@@ -718,14 +718,61 @@ table.dataTable thead .sorting:after {
     padding-left: 25px;
 }
 
-.application-form{
+#page-wrapper .application-form{
     padding-left:15%;
     margin-top: 5px;
 }
-.application-form label{
+#page-wrapper .application-form label{
     padding-top:8px;
 }
 .gap{
     margin-top: 3%;
-    
+}
+
+#DialogModel{
+    display: none;
+    z-index: 999;
+}
+#DialogModel .application-form{
+    margin-top: 5px;
+}
+#DialogModel .application-form label{
+    padding-top:8px;
+}
+ 
+table.scroll {
+    width: 100%;  /* Optional */
+    border-collapse: collapse; 
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+table.scroll thead tr th { 
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    width: auto;
+    /* text-align: left; */
+}
+table.scroll tbody tr td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    width:20%;
+}
+
+table.scroll tbody {
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+table.scroll tbody td:last-child, thead th:last-child {
+    border-right: none;
 }
